@@ -61,6 +61,7 @@ class SchedulesController < ApplicationController
     @pending = @total[2]
     @absence = @total[3]
 
+    # @schedule = Schedule.find(params[:id])
     @caution = '※チーム毎でサイト管理している為、パスワードを設けておりません。チーム幹事のみ編集してください。'
   end
 

@@ -19,10 +19,10 @@
             </td>
             <td class="border_tl" colspan="4"><%= simple_format schedule.addcomment %></td>
             <tr>
-                <td class="border_tl" align="center"><%= @answers_sanka&.count %></td>
-                <td class="border_tl" align="center"><%= @answers_tabun&.count %></td>
-                <td class="border_tl" align="center"><%= @answers_mitei&.count %></td>
-                <td class="border_tl" align="center"><%= @answers_kesseki&.count %></td>
+                <td class="border_tl" align="center"><%= schedule.answer.sanka&.count %></td>
+                <td class="border_tl" align="center"><%= schedule.answer.tabun&.count %></td>
+                <td class="border_tl" align="center"><%= schedule.answer.mitei&.count %></td>
+                <td class="border_tl" align="center"><%= schedule.answer.kesseki&.count %></td>
             </tr>
         </tr>
         <% end %>
